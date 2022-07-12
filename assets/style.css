@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3em;
+}
+
+body {
+    background: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transition: background .2s linear;
+    font-family: 'Comfortaa', cursive;
+}
+
+body.dark{
+    background: #232c35;
+    color: #fff;
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.checkbox, button{
+    cursor: pointer;
+}
+
+.label{
+    background-color: #111;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 4px 5px 1.5px;
+    position: relative;
+    height: 26px;
+    width: 55px;
+
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform .2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(28px);
+}
+
+.sun{
+    color: #f1c40f;
+}
+
+.moon{
+    color: #f39c12;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    font-size: 1em;
+    padding: 1.2em;
+    margin: 0.5em;
+    border-radius: 50%;
+    border: 2px solid #3f3f3f;
+}
+
+#timer{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    margin: 1.5em;
+    border: 3px solid #0000009c;
+    border-radius: 50%;
+    padding: 140px;
+}
+
+#dark-theme{
+    position: absolute;
+    top: 20px;
+    right: 60px;  
+}
+

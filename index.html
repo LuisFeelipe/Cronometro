@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <title>Cronômetro</title>
+</head>
+<body>
+    <h1>Cronômetro</h1>
+    <div id="dark-theme">
+        <input type="checkbox" class="checkbox" id="chk">
+
+        <label class="label" for="chk">
+            <span class="material-symbols-outlined sun">brightness_high</span>
+            <span class="material-symbols-outlined moon">dark_mode</span>
+            <div class="ball"></div>
+        </label>
+
+    </div>
+    
+    <div id="timer">00:00:00</div>
+    <div>
+        <button id="btn-stop" class="material-symbols-outlined" onclick="stop()">stop</button>
+        <button id="btn-play" class="material-symbols-outlined">play_arrow</button>
+        <button id="btn-pause" class="material-symbols-outlined" onclick="pause()">pause</button>
+    </div>
+    
+    <script src="assets/script.js"></script>
+
+</body>
+</html>
